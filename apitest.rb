@@ -19,7 +19,6 @@ namespace '/api/v1' do
         vars[key] = val
       end
     end
-    params[:splat].first
     {status: status, path: path, vars: vars}.to_json
   end
 end
